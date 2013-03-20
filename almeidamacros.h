@@ -21,3 +21,6 @@ do{\
 /* Debugging macro */
 #define db_line()\
 	do { fprintf(stderr, "line %d\n", __LINE__); fflush(stderr); } while(0)
+
+/* Typed allocation */
+#define talloc(ty, sz) (ty*)malloc((sz)*sizeof(ty))
