@@ -17,3 +17,7 @@ do{\
 	fprintf(stdout, " - " msg "\n", ##__VA_ARGS__);\
 	fflush(stdout);\
 } while(0)
+
+/* Debugging macro */
+#define db_line()\
+	do { fprintf(stderr, "line %d\n", __LINE__); fflush(stderr); } while(0)
