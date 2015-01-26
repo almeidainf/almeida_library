@@ -10,6 +10,7 @@ do{\
 	fprintf(stderr, "Error: " msg "\n", ##__VA_ARGS__);\
 	fflush(stderr);\
 } while(0)
+// Or just use perror();
 
 /* Macro used for verbose messages. Sends the message to stdout. */
 #define verbose(msg, ...)\
